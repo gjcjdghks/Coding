@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+
+class Fridge:
+	isOpened=False
+	foods=[]
+
+	def open(self):
+		self.isOpened=True
+		print '냉장고 문을 열었어요...'
+
+	def put(self,thing):
+		if self.isOpened:
+			self.foods.append(thing)
+			print '냉장고 속에 음식이 들어갔네...'
+		else:
+			print '냉장고 문이 닫혀있어서 못넣겠어요...'
+
+	def close(self):
+		self.isOpened=False
+		print '냉장고문을닫았어요...'
+
+class Food:
+	pass
